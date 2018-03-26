@@ -139,11 +139,14 @@ Displayed result:
 - Please select: (0)train on all data (non-smm, rock, flap-rock, flap) / (1)train on rock data only ((non-smm, rock, flap-rock):1  
 
 Displayed result:  
-	Confusion matrix:   
-			6424           6
-			   0          40
-	Precision 0.869565
-	Recall 1.000000
-	F1 score 0.930233
-	Accuracy 0.999073
+
+		Confusion matrix: 
+				6424           6
+				   0          40
+		Precision 0.869565
+		Recall 1.000000
+		F1 score 0.930233
+		Accuracy 0.999073
+
+
 
