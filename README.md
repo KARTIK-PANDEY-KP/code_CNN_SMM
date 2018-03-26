@@ -60,7 +60,7 @@ The displayed result (at test time) in terms of error:
 
 Lowest validation error is 0.038870
 
-How to get the F1-score:
+<b>How to get the F1-score:</b>
 
 To display the result at that epoch (epoch 35) in terms of the F1-score measure (during training and during testing):
 1)	go to the file “ASD_movement_CNN.m”  
@@ -96,9 +96,9 @@ The dislayed result is:
 1) Use low and mid-level features of a CNN which was already pretrained on SMMs of subjects other than Subject 2 (e.g., records sessions of Subjects 2, 3, 4, 5, 6 of the selected study (Study 2)). The record sessions exclude flap movement activities and keep non-SMM, rock-SMM and flap-rock SMM activities.    
 2) Apply them on top of an SVM to form a framework and train the SVM via this framework using 2000 instances randomly selected from the training dataset of Subject 2 (Study 1).  
 
-NB: in the options, we choose not to label raw data and not extract features from raw data since these steps are already done for you. Indeed the corresponding files “preprocessedDataAndLabels.mat” (labeled data) and “featureVectorAndLabels.mat” (extracted features) are already created within each record session of Subject 1 in the path ‘data/Study1/URI-001-XX-XX-XX’ folder). However, you can choose to label data and extract features if desired.
+NB: in the options, we choose not to label raw data and not extract features from raw data since these steps are already done for you. Indeed the corresponding files “preprocessedDataAndLabels.mat” (labeled data) and “featureVectorAndLabels.mat” (extracted features) are already created within each record session of Subject 1 in the path ‘data/Study1/URI-001-XX-XX-XX’ folder). However, you can choose to label data and extract features if desired.  
 
-<b>Steps:</b> Run the code “stereotypyMainMultSessions.m” and enter values below:
+<b>Steps:</b> Run the code “stereotypyMainMultSessions.m” and enter values below:  
 - Please select subject ID (1-6):2
 - Please select study type (1-2):1
     [1]:URI-002-01-18-08
@@ -125,7 +125,7 @@ Displayed result:
 
 <b>Details:</b>
 1) Use low and mid-level features of a CNN which was already pre-trained on human activities (for human activity recognition).   
-2) Apply them on top of an SVM to form a framework and train the SVM via this framework using 2000 instances randomly selected from the training dataset of Subject 2 (Study 1).  
+2) Apply them on top of an SVM to form a framework and train the SVM via this framework using 2000 instances randomly selected from the training dataset of Subject 2 (Study 1).   
 
 <b>Steps:</b> Run the code “stereotypyMainMultSessions.m” and enter values below:  
 - Please select subject ID (1-6):2
@@ -136,9 +136,10 @@ Displayed result:
 - Please select: (1)frequency domain / (2)time domain:1  
 - Please select: (1)train network from scratch / (2)train using pre-training SMM network / (3)train using pre-trained HAR network: 3
 - Please select: (1)do feature extraction / (2)do not extract features (already extracted) 2
-- Please select: (0)train on all data (non-smm, rock, flap-rock, flap) / (1)train on rock data only ((non-smm, rock, flap-rock):1
-Displayed result:
-	Confusion matrix: 
+- Please select: (0)train on all data (non-smm, rock, flap-rock, flap) / (1)train on rock data only ((non-smm, rock, flap-rock):1  
+
+Displayed result:  
+	Confusion matrix:   
 			6424           6
 			   0          40
 	Precision 0.869565
